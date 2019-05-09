@@ -26,4 +26,10 @@
      
  Krok 3. Wygenerowanie klasy testowej. Implementacja danych testowych. Implementowanie metod testowych. Testowanie klasy JakaToLiczba przy pomocy zaimplementowanych testów. W zależności od wyniku testu implementowanie klasy JakaToLiczba.
  
+ Krok 4. Refactoring klasy testowanej
+ 
+ ####Uwagi.
+ - metoda testowanej klasy potrafi obsłużyć błąd danych spoza zakresu, jednakże jest to problem walidacji.
+ - zgodnie z regułą cystości kodu należy dokonać refactoringu testów.
+ 
  
