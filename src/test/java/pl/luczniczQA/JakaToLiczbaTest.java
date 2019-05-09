@@ -1,6 +1,7 @@
 package pl.luczniczQA;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 class JakaToLiczbaTest {
@@ -10,6 +11,7 @@ class JakaToLiczbaTest {
      */
 
     final private int LICZBA_ZERO =0;
+    final private String LICZBA_ZERO_KOMUNIKAT="To jest 0";
 
     final private int LICZBA_MINUS_JEDEN =-1;
     final private int LICZBA_MINUS_DWA =-2;
@@ -25,8 +27,15 @@ class JakaToLiczbaTest {
     final private int LICZBA_DOWOLNA_PARZYSTA_UJEMNA =-1880;
     final private int LICZBA_DOWOLNA_PARZYSTA_DODATNIA =550;
 
+final private String TEST_OK="_test ok_";
 
     @Test
-    void jakaToLiczba() {
+    void powinnoBycZero() {
+        /**
+         * testowana metoda powinna zwrócić pożądany komunikat
+         */
+        JakaToLiczba liczba = new JakaToLiczba();
+        liczba.jakaToLiczba(LICZBA_ZERO);
+        assertTrue(liczba.jakaToLiczba(LICZBA_ZERO)==LICZBA_ZERO_KOMUNIKAT, TEST_OK);
     }
 }
