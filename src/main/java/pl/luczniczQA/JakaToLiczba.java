@@ -8,7 +8,14 @@ public class JakaToLiczba {
             return "To jest 0";
         } else if (liczba < 0 && liczba % 2 != 0) {
             return "Nieparzysta liczba mniejsza od zera";
-        } else {
+        } else if (liczba<0 && liczba %2==0){
+            return "Parzysta liczba mniejsza od zera";
+        }
+
+
+
+
+        else {
             return "Błąd";
         }
     }
