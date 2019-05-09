@@ -14,3 +14,14 @@
  - jeżeli większa od zera i nieparzysta to komunikat: "Nieparzysta liczba wieksza od zera"
  - w pozostałych przypadkach komunikat "Błąd!"
  
+ Krok 1. Utworzenie pliku readme.md. Sformułowanie zadania
+ Krok 2. Utworzenie struktury projektu:
+ - maven dependecies: Junit ver. 5.4.0
+ - utworzenie klasy JakaToLiczba w strukturze projektu
+ - implementacja metody:  
+     String jakaToLiczba(int liczba){
+          return "";
+     }
+     
+     
+ Krok 3. Wygenerowanie klasy testowej. Implementacja danych testowych
