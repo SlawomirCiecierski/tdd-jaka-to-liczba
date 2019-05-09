@@ -35,7 +35,7 @@ class JakaToLiczbaTest {
     final private int LICZBA_DWA = 2;
     final private int LICZBA_DOWOLNA_NIEPARZYSTA_DODATNIA = 35;
     final private int LICZBA_MAKSYMALNA_DODATNIA_NIEPARZYSTA = Integer.MAX_VALUE; //2147483647
-    final private int LICZBA_MAKSYMALNA_DODATNIA_PARZYSTA = Integer.MAX_VALUE - 1; //2147483647
+    final private int LICZBA_MAKSYMALNA_DODATNIA_PARZYSTA = Integer.MAX_VALUE - 1; //2147483646
     final private int LICZBA_DOWOLNA_PARZYSTA_DODATNIA = 550;
 
     final private String TEST_OK = "_test ok_ dla wartości: ";
@@ -103,13 +103,14 @@ class JakaToLiczbaTest {
     }
 
 //liczby dodatnie
-@Test
-void powinnaBycLiczbaJeden() {
 
-    JakaToLiczba liczba = new JakaToLiczba();
+    @Test
+    void powinnaBycLiczbaJeden() {
 
-    assertTrue(liczba.jakaToLiczba(LICZBA_JEDEN) == LICZBA_DODATNIA_NIEPARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_JEDEN);
-}
+        JakaToLiczba liczba = new JakaToLiczba();
+
+        assertTrue(liczba.jakaToLiczba(LICZBA_JEDEN) == LICZBA_DODATNIA_NIEPARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_JEDEN);
+    }
 
     @Test
     void powinnaBycLiczbaDodatniaNieparzystaMaksymalna() {
