@@ -6,7 +6,8 @@ public class JakaToLiczba {
 
         if (liczba == 0) {
             return "To jest 0";
-
+        } else if (liczba < 0 && liczba % 2 != 0) {
+            return "Nieparzysta liczba mniejsza od zera";
         } else {
             return "Błąd";
         }

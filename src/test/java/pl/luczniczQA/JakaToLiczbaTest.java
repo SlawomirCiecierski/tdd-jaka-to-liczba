@@ -15,7 +15,8 @@ class JakaToLiczbaTest {
 
     final private int LICZBA_MINUS_JEDEN =-1;
     final private int LICZBA_MINUS_DWA =-2;
-    final private int LICZBA_MINIMALNA_UJEMNA =Integer.MIN_VALUE; //-2147483648
+    final private int LICZBA_MINIMALNA_UJEMNA_PARZYSTA =Integer.MIN_VALUE; //-2147483648
+    final private int LICZBA_MINIMALNA_UJEMNA_NIEPARZYSTA =Integer.MIN_VALUE+1; //-2147483648
     final private String LICZBA_UJEMNA_NIEPARZYSTA_KOMUNIKAT ="Nieparzysta liczba mniejsza od zera";
 
 
@@ -24,7 +25,8 @@ class JakaToLiczbaTest {
 
     final private int LICZBA_DOWOLNA_NIEPARZYSTA_UJEMNA =-33;
     final private int LICZBA_DOWOLNA_NIEPARZYSTA_DODATNIA =35;
-    final private int LICZBA_MAKSYMALNA_DODATNIA =Integer.MAX_VALUE; //2147483647
+    final private int LICZBA_MAKSYMALNA_DODATNIA_NIEPARZYSTA =Integer.MAX_VALUE; //2147483647
+    final private int LICZBA_MAKSYMALNA_DODATNIA_PARZYSTA =Integer.MAX_VALUE-1; //2147483647
 
     final private int LICZBA_DOWOLNA_PARZYSTA_UJEMNA =-1880;
     final private int LICZBA_DOWOLNA_PARZYSTA_DODATNIA =550;
@@ -56,7 +58,7 @@ final private String TEST_OK="_test ok_ dla wartości: ";
 
         JakaToLiczba liczba = new JakaToLiczba();
 
-        assertTrue(liczba.jakaToLiczba(LICZBA_MINIMALNA_UJEMNA)==LICZBA_UJEMNA_NIEPARZYSTA_KOMUNIKAT, TEST_OK+ LICZBA_MINIMALNA_UJEMNA);
+        assertTrue(liczba.jakaToLiczba(LICZBA_MINIMALNA_UJEMNA_NIEPARZYSTA)==LICZBA_UJEMNA_NIEPARZYSTA_KOMUNIKAT, TEST_OK+ LICZBA_MINIMALNA_UJEMNA_NIEPARZYSTA);
     }
 
     @Test
