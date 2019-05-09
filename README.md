@@ -24,4 +24,6 @@
      }
      
      
- Krok 3. Wygenerowanie klasy testowej. Implementacja danych testowych
+ Krok 3. Wygenerowanie klasy testowej. Implementacja danych testowych. Implementowanie metod testowych. Testowanie klasy JakaToLiczba przy pomocy zaimplementowanych testów. W zależności od wyniku testu implementowanie klasy JakaToLiczba.
+ 
+ 
