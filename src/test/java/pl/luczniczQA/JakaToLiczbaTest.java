@@ -102,5 +102,30 @@ class JakaToLiczbaTest {
         assertTrue(liczba.jakaToLiczba(LICZBA_DOWOLNA_PARZYSTA_UJEMNA) == LICZBA_UJEMNA_PARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_DOWOLNA_PARZYSTA_UJEMNA);
     }
 
+//liczby dodatnie
+@Test
+void powinnaBycLiczbaJeden() {
+
+    JakaToLiczba liczba = new JakaToLiczba();
+
+    assertTrue(liczba.jakaToLiczba(LICZBA_JEDEN) == LICZBA_DODATNIA_NIEPARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_JEDEN);
+}
+
+    @Test
+    void powinnaBycLiczbaDodatniaNieparzystaMaksymalna() {
+
+        JakaToLiczba liczba = new JakaToLiczba();
+
+        assertTrue(liczba.jakaToLiczba(LICZBA_MAKSYMALNA_DODATNIA_NIEPARZYSTA) == LICZBA_DODATNIA_NIEPARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_MAKSYMALNA_DODATNIA_NIEPARZYSTA);
+    }
+
+    @Test
+    void powinnaBycLiczbaDodatniaNieparzystaDowolna() {
+
+        JakaToLiczba liczba = new JakaToLiczba();
+
+        assertTrue(liczba.jakaToLiczba(LICZBA_DOWOLNA_NIEPARZYSTA_DODATNIA) == LICZBA_DODATNIA_NIEPARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_DOWOLNA_NIEPARZYSTA_DODATNIA);
+    }
+
 
 }
