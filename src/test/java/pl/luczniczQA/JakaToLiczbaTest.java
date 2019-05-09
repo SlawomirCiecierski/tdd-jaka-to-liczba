@@ -52,7 +52,7 @@ class JakaToLiczbaTest {
         assertTrue(liczba.jakaToLiczba(LICZBA_ZERO) == LICZBA_ZERO_KOMUNIKAT, TEST_OK + LICZBA_ZERO);
     }
 
-//liczby ujemne
+//liczby ujemne nieparzyste
 
     @Test
     void powinnaBycLiczbaMinusJeden() {
@@ -78,6 +78,8 @@ class JakaToLiczbaTest {
         assertTrue(liczba.jakaToLiczba(LICZBA_DOWOLNA_NIEPARZYSTA_UJEMNA) == LICZBA_UJEMNA_NIEPARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_DOWOLNA_NIEPARZYSTA_UJEMNA);
     }
 
+    //liczby ujemne parzyste
+
     @Test
     void powinnaBycLiczbaUjemnaMinusDwa() {
 
@@ -102,7 +104,7 @@ class JakaToLiczbaTest {
         assertTrue(liczba.jakaToLiczba(LICZBA_DOWOLNA_PARZYSTA_UJEMNA) == LICZBA_UJEMNA_PARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_DOWOLNA_PARZYSTA_UJEMNA);
     }
 
-//liczby dodatnie
+//liczby dodatnie nieparzyste
 
     @Test
     void powinnaBycLiczbaJeden() {
@@ -126,6 +128,32 @@ class JakaToLiczbaTest {
         JakaToLiczba liczba = new JakaToLiczba();
 
         assertTrue(liczba.jakaToLiczba(LICZBA_DOWOLNA_NIEPARZYSTA_DODATNIA) == LICZBA_DODATNIA_NIEPARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_DOWOLNA_NIEPARZYSTA_DODATNIA);
+    }
+
+    //liczby dodatnie parzyste
+
+    @Test
+    void powinnaBycLiczbaDwa() {
+
+        JakaToLiczba liczba = new JakaToLiczba();
+
+        assertTrue(liczba.jakaToLiczba(LICZBA_DWA) == LICZBA_DODATNIA_PARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_DWA);
+    }
+
+    @Test
+    void powinnaBycLiczbaDodatniaParzystaMaksymalna() {
+
+        JakaToLiczba liczba = new JakaToLiczba();
+
+        assertTrue(liczba.jakaToLiczba(LICZBA_MAKSYMALNA_DODATNIA_PARZYSTA) == LICZBA_DODATNIA_PARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_MAKSYMALNA_DODATNIA_PARZYSTA);
+    }
+
+    @Test
+    void powinnaBycLiczbaDodatniaParzystaDowolna() {
+
+        JakaToLiczba liczba = new JakaToLiczba();
+
+        assertTrue(liczba.jakaToLiczba(LICZBA_DOWOLNA_PARZYSTA_DODATNIA) == LICZBA_DODATNIA_PARZYSTA_KOMUNIKAT, TEST_OK + LICZBA_DOWOLNA_PARZYSTA_DODATNIA);
     }
 
 
